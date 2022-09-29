@@ -1,11 +1,7 @@
-﻿//substituir seu belo nome!
-
+﻿
 Console.WriteLine("Digite seu nomezinho: ");
 string nomeDigitado = Console.ReadLine()!;
-
 string nomeNinja = nomeDigitado
-   
-.ToLower()
 
 .Replace("a", "KA")
 .Replace("á", "KA")
@@ -44,10 +40,8 @@ string nomeNinja = nomeDigitado
 .Replace("x", "NA")
 .Replace("y", "FU")
 .Replace("z", "ZI")
-
 .ToLower();
 
-string inicial = nomeNinja.Substring(0, 1).ToUpper();
-string restante = nomeNinja.Substring(1);
+nomeNinja = $"{nomeNinja.Substring(0, 1).ToUpper()}{nomeNinja.Substring(1).ToLower()}";
 
 Console.WriteLine($"Seu nome de naruto é: {nomeNinja}!");
